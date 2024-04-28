@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
+  <title>Text Converter</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <form>
+      <h1 id="myh1">Text Converter</h1>
+      <label for="generator-type"><b>Select generator:</b></label>
+      <select id="generator-type">
+        <option value="qr">QR Generator</option>
+        <option value="barcode">Barcode Generator</option>
+        <option value="encryption">Encryption</option>
+        <option value="decryption">Decryption</option>
+      </select>
+      <br>
+      <label for="data_input"><b>Enter data:</b></label>
+      <input type="text" id="data_input" name="data_input">
+      <br>
+      <button type="submit" onclick="generateData()">Generate</button>
+      <img src="" id="imgbox">
+      <img src="" id="barcode">
+      <input type="text" id="textbox" style="display:none">
+      <input type="text" id="textbox1" style="display:none">
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
